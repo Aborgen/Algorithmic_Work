@@ -24,8 +24,11 @@
     <ClCompile Include="Part1\DataStructure\src\QuickFindUF.cpp">
       <Filter>Source Files\Part1</Filter>
     </ClCompile>
-    <ClCompile Include="Part1\Week01\QuickFindUF_implementation.cpp">
+    <ClCompile Include="Part1\DataStructure\test\QuickFindUFTests.cpp">
       <Filter>Source Files\Part1</Filter>
+    </ClCompile>
+    <ClCompile Include="testInit.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
