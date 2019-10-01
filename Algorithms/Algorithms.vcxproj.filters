@@ -13,5 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Part1">
+      <UniqueIdentifier>{78958263-e92a-4692-8f2d-e778b0e4fc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Part1">
+      <UniqueIdentifier>{37464aef-a335-4f00-bc0f-a2d0f15ab45c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Part1\DataStructure\src\QuickFindUF.cpp">
+      <Filter>Source Files\Part1</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\Week01\QuickFindUF_implementation.cpp">
+      <Filter>Source Files\Part1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Part1\DataStructure\QuickFindUF.h">
+      <Filter>Header Files\Part1</Filter>
+    </ClInclude>
+    <ClInclude Include="Part1\DataStructure\UnionFind.h">
+      <Filter>Header Files\Part1</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
