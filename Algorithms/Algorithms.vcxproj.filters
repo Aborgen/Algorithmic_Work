@@ -19,16 +19,25 @@
     <Filter Include="Header Files\Part1">
       <UniqueIdentifier>{37464aef-a335-4f00-bc0f-a2d0f15ab45c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Part1\test">
+      <UniqueIdentifier>{c44b8c12-ed00-48e0-b491-3d2216cce86c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Part1\DataStructure\src\QuickFindUF.cpp">
       <Filter>Source Files\Part1</Filter>
     </ClCompile>
-    <ClCompile Include="Part1\DataStructure\test\QuickFindUFTests.cpp">
-      <Filter>Source Files\Part1</Filter>
-    </ClCompile>
     <ClCompile Include="testInit.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\DataStructure\src\QuickUnionUF.cpp">
+      <Filter>Source Files\Part1</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\DataStructure\test\QuickFindUFTests.cpp">
+      <Filter>Source Files\Part1\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\DataStructure\test\QuickUnionUFTests.cpp">
+      <Filter>Source Files\Part1\test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +45,9 @@
       <Filter>Header Files\Part1</Filter>
     </ClInclude>
     <ClInclude Include="Part1\DataStructure\UnionFind.h">
+      <Filter>Header Files\Part1</Filter>
+    </ClInclude>
+    <ClInclude Include="Part1\DataStructure\QuickUnionUF.h">
       <Filter>Header Files\Part1</Filter>
     </ClInclude>
   </ItemGroup>
