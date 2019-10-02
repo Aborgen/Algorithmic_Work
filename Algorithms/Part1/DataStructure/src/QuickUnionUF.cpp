@@ -20,8 +20,8 @@ namespace Part1::DataStructure
 
 	void QuickUnionUF::join(int p, int q)
 	{
-		int newRoot = getRoot(elements[p]);
-		int oldRoot = getRoot(elements[q]);
+		int newRoot = getRoot(p);
+		int oldRoot = getRoot(q);
 		elements[oldRoot] = elements[newRoot];
 	}
 

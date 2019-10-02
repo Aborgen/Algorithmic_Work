@@ -24,8 +24,8 @@ namespace Part1::DataStructure
 	// two nodes, the 'heavier' (more children) node becomes the parent of the other.
 	void WeightedQuickUnionUF::join(int p, int q)
 	{
-		int newRoot = getRoot(elements[p]);
-		int oldRoot = getRoot(elements[q]);
+		int newRoot = getRoot(p);
+		int oldRoot = getRoot(q);
 		if (newRoot == oldRoot) {
 			return;
 		}
