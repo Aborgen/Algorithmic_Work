@@ -167,14 +167,17 @@
   <ItemGroup>
     <ClCompile Include="Part1\DataStructure\src\QuickFindUF.cpp" />
     <ClCompile Include="Part1\DataStructure\src\QuickUnionUF.cpp" />
+    <ClCompile Include="Part1\DataStructure\src\WeightedQuickUnionUF.cpp" />
     <ClCompile Include="Part1\DataStructure\test\QuickFindUFTests.cpp" />
     <ClCompile Include="Part1\DataStructure\test\QuickUnionUFTests.cpp" />
+    <ClCompile Include="Part1\DataStructure\test\WeightedQuickUnionUFTests.cpp" />
     <ClCompile Include="testInit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Part1\DataStructure\QuickFindUF.h" />
     <ClInclude Include="Part1\DataStructure\QuickUnionUF.h" />
     <ClInclude Include="Part1\DataStructure\UnionFind.h" />
+    <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUF.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

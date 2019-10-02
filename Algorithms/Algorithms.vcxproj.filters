@@ -39,6 +39,12 @@
     <ClCompile Include="Part1\DataStructure\test\QuickUnionUFTests.cpp">
       <Filter>Source Files\Part1\test</Filter>
     </ClCompile>
+    <ClCompile Include="Part1\DataStructure\src\WeightedQuickUnionUF.cpp">
+      <Filter>Source Files\Part1</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\DataStructure\test\WeightedQuickUnionUFTests.cpp">
+      <Filter>Source Files\Part1\test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Part1\DataStructure\QuickFindUF.h">
@@ -48,6 +54,9 @@
       <Filter>Header Files\Part1</Filter>
     </ClInclude>
     <ClInclude Include="Part1\DataStructure\QuickUnionUF.h">
+      <Filter>Header Files\Part1</Filter>
+    </ClInclude>
+    <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUF.h">
       <Filter>Header Files\Part1</Filter>
     </ClInclude>
   </ItemGroup>
