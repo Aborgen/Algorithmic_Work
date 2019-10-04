@@ -22,6 +22,10 @@ namespace Part1::DataStructure
 	{
 		int newRoot = getRoot(p);
 		int oldRoot = getRoot(q);
+		if (newRoot == oldRoot) {
+			return;
+		}
+
 		elements[oldRoot] = elements[newRoot];
 	}
 
