@@ -173,6 +173,12 @@
     <ClCompile Include="Part1\DataStructure\test\QuickUnionUFTests.cpp" />
     <ClCompile Include="Part1\DataStructure\test\WeightedQuickUnionUFCompTests.cpp" />
     <ClCompile Include="Part1\DataStructure\test\WeightedQuickUnionUFTests.cpp" />
+    <ClCompile Include="Part1\Percolation\src\Coordinates.cpp" />
+    <ClCompile Include="Part1\Percolation\src\Percolation.cpp" />
+    <ClCompile Include="Part1\Percolation\src\Site.cpp" />
+    <ClCompile Include="Part1\Percolation\test\CoordinatesTests.cpp" />
+    <ClCompile Include="Part1\Percolation\test\PercolationTests.cpp" />
+    <ClCompile Include="Part1\Percolation\test\SiteTests.cpp" />
     <ClCompile Include="testInit.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +187,9 @@
     <ClInclude Include="Part1\DataStructure\UnionFind.h" />
     <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUF.h" />
     <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUFComp.h" />
+    <ClInclude Include="Part1\Percolation\Coordinates.h" />
+    <ClInclude Include="Part1\Percolation\Percolation.h" />
+    <ClInclude Include="Part1\Percolation\Site.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

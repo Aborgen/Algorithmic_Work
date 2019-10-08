@@ -22,6 +22,12 @@
     <Filter Include="Source Files\Part1\test">
       <UniqueIdentifier>{c44b8c12-ed00-48e0-b491-3d2216cce86c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Part1\Project">
+      <UniqueIdentifier>{7b168f70-b9c1-49b7-a3df-b397cd377023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Part1\Project">
+      <UniqueIdentifier>{b8d1f176-6746-4275-9624-34353dd304ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Part1\DataStructure\src\QuickFindUF.cpp">
@@ -51,6 +57,24 @@
     <ClCompile Include="Part1\DataStructure\src\WeightedQuickUnionUFComp.cpp">
       <Filter>Source Files\Part1</Filter>
     </ClCompile>
+    <ClCompile Include="Part1\Percolation\src\Coordinates.cpp">
+      <Filter>Source Files\Part1\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\Percolation\src\Percolation.cpp">
+      <Filter>Source Files\Part1\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\Percolation\src\Site.cpp">
+      <Filter>Source Files\Part1\Project</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\Percolation\test\CoordinatesTests.cpp">
+      <Filter>Source Files\Part1\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\Percolation\test\PercolationTests.cpp">
+      <Filter>Source Files\Part1\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Part1\Percolation\test\SiteTests.cpp">
+      <Filter>Source Files\Part1\test</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Part1\DataStructure\QuickFindUF.h">
@@ -67,6 +91,15 @@
     </ClInclude>
     <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUFComp.h">
       <Filter>Header Files\Part1</Filter>
+    </ClInclude>
+    <ClInclude Include="Part1\Percolation\Coordinates.h">
+      <Filter>Header Files\Part1\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Part1\Percolation\Percolation.h">
+      <Filter>Header Files\Part1\Project</Filter>
+    </ClInclude>
+    <ClInclude Include="Part1\Percolation\Site.h">
+      <Filter>Header Files\Part1\Project</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
