@@ -4,7 +4,7 @@ namespace Part1::DataStructure
 {
 	WeightedQuickUnionUF::WeightedQuickUnionUF(int initialElements) {
 		for (int i = 0; i < initialElements; i++) {
-			push(i);
+			push();
 		}
 	}
 
@@ -13,9 +13,10 @@ namespace Part1::DataStructure
 		return static_cast<int>(elements.size());
 	}
 
-	void WeightedQuickUnionUF::push(int element)
+	void WeightedQuickUnionUF::push()
 	{
-		elements.push_back(element);
+		elements.push_back(lastIndex);
+		lastIndex++;
 		sizes.push_back(1);
 	}
 

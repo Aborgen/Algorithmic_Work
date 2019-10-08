@@ -1,10 +1,11 @@
+#include <iostream>
 #include "../QuickFindUF.h"
 
 namespace Part1::DataStructure
 {
 	QuickFindUF::QuickFindUF(int initialElements) {
 		for (int i = 0; i < initialElements; i++) {
-			push(i);
+			push();
 		}
 	}
 
@@ -13,9 +14,10 @@ namespace Part1::DataStructure
 		return static_cast<int>(elements.size());
 	}
 
-	void QuickFindUF::push(int element)
+	void QuickFindUF::push()
 	{
-		elements.push_back(element);
+		elements.push_back(lastIndex);
+		lastIndex++;
 	}
 
 	void QuickFindUF::join(int p, int q)

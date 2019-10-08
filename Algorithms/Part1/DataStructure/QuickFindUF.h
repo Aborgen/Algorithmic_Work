@@ -12,7 +12,7 @@ namespace Part1::DataStructure
 	public:
 		QuickFindUF(int initialElements);
 		int count();
-		void push(int element);
+		void push();
 		void join(int p, int q);
 		bool anyConnection(int p, int q) const;
 		int operator[](int idx) const;
