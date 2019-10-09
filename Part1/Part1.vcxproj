@@ -17,29 +17,43 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Testing|Win32">
-      <Configuration>Testing</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Testing|x64">
-      <Configuration>Testing</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataStructure\QuickFindUF.h" />
+    <ClInclude Include="DataStructure\QuickUnionUF.h" />
+    <ClInclude Include="DataStructure\UnionFind.h" />
+    <ClInclude Include="DataStructure\WeightedQuickUnionUF.h" />
+    <ClInclude Include="DataStructure\WeightedQuickUnionUFComp.h" />
+    <ClInclude Include="Percolation\Coordinates.h" />
+    <ClInclude Include="Percolation\Percolation.h" />
+    <ClInclude Include="Percolation\Site.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DataStructure\src\QuickFindUF.cpp" />
+    <ClCompile Include="DataStructure\src\QuickUnionUF.cpp" />
+    <ClCompile Include="DataStructure\src\WeightedQuickUnionUF.cpp" />
+    <ClCompile Include="DataStructure\src\WeightedQuickUnionUFComp.cpp" />
+    <ClCompile Include="DataStructure\test\QuickFindUFTests.cpp" />
+    <ClCompile Include="DataStructure\test\QuickUnionUFTests.cpp" />
+    <ClCompile Include="DataStructure\test\WeightedQuickUnionUFCompTests.cpp" />
+    <ClCompile Include="DataStructure\test\WeightedQuickUnionUFTests.cpp" />
+    <ClCompile Include="Percolation\src\Coordinates.cpp" />
+    <ClCompile Include="Percolation\src\Percolation.cpp" />
+    <ClCompile Include="Percolation\src\Site.cpp" />
+    <ClCompile Include="Percolation\test\CoordinatesTests.cpp" />
+    <ClCompile Include="Percolation\test\PercolationTests.cpp" />
+    <ClCompile Include="Percolation\test\SiteTests.cpp" />
+    <ClCompile Include="testInit.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{3B86D74E-A1D4-4233-95F8-1DA3714FC745}</ProjectGuid>
+    <ProjectGuid>{288E8EDF-B2DF-4D29-99F7-DA879FF5E5D0}</ProjectGuid>
     <RootNamespace>Algorithms</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>Part1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
@@ -53,12 +67,6 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>MultiByte</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
@@ -79,16 +87,10 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -103,17 +105,11 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>../common</AdditionalIncludeDirectories>
     </ClCompile>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Testing|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
-    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -127,14 +123,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
     </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Testing|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -164,33 +152,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Part1\DataStructure\src\QuickFindUF.cpp" />
-    <ClCompile Include="Part1\DataStructure\src\QuickUnionUF.cpp" />
-    <ClCompile Include="Part1\DataStructure\src\WeightedQuickUnionUF.cpp" />
-    <ClCompile Include="Part1\DataStructure\src\WeightedQuickUnionUFComp.cpp" />
-    <ClCompile Include="Part1\DataStructure\test\QuickFindUFTests.cpp" />
-    <ClCompile Include="Part1\DataStructure\test\QuickUnionUFTests.cpp" />
-    <ClCompile Include="Part1\DataStructure\test\WeightedQuickUnionUFCompTests.cpp" />
-    <ClCompile Include="Part1\DataStructure\test\WeightedQuickUnionUFTests.cpp" />
-    <ClCompile Include="Part1\Percolation\src\Coordinates.cpp" />
-    <ClCompile Include="Part1\Percolation\src\Percolation.cpp" />
-    <ClCompile Include="Part1\Percolation\src\Site.cpp" />
-    <ClCompile Include="Part1\Percolation\test\CoordinatesTests.cpp" />
-    <ClCompile Include="Part1\Percolation\test\PercolationTests.cpp" />
-    <ClCompile Include="Part1\Percolation\test\SiteTests.cpp" />
-    <ClCompile Include="testInit.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Part1\DataStructure\QuickFindUF.h" />
-    <ClInclude Include="Part1\DataStructure\QuickUnionUF.h" />
-    <ClInclude Include="Part1\DataStructure\UnionFind.h" />
-    <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUF.h" />
-    <ClInclude Include="Part1\DataStructure\WeightedQuickUnionUFComp.h" />
-    <ClInclude Include="Part1\Percolation\Coordinates.h" />
-    <ClInclude Include="Part1\Percolation\Percolation.h" />
-    <ClInclude Include="Part1\Percolation\Site.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

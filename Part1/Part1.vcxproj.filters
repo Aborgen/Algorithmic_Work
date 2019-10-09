@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\DataStructure">
+      <UniqueIdentifier>{ecf65fa7-6045-4397-9ef1-8371bcdc572b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Percolation">
+      <UniqueIdentifier>{6042a8f7-2de7-4b2c-9bf3-e56b4faacc2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\DataStructure">
+      <UniqueIdentifier>{91d53930-e8ff-4585-9a07-ade1ebd7aa8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\DataStructure\test">
+      <UniqueIdentifier>{e3e6a80b-3fde-486e-b68d-0f6f127bc85d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Percolation">
+      <UniqueIdentifier>{822e6293-8532-4901-af97-bfd245a3f09c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Percolation\test">
+      <UniqueIdentifier>{34b1a190-0e3c-405c-9edf-a68cdc9935d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataStructure\QuickFindUF.h">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\QuickUnionUF.h">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\UnionFind.h">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\WeightedQuickUnionUF.h">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Percolation\Coordinates.h">
+      <Filter>Header Files\Percolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Percolation\Percolation.h">
+      <Filter>Header Files\Percolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Percolation\Site.h">
+      <Filter>Header Files\Percolation</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructure\WeightedQuickUnionUFComp.h">
+      <Filter>Header Files\DataStructure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Percolation\src\Coordinates.cpp">
+      <Filter>Resource Files\Percolation</Filter>
+    </ClCompile>
+    <ClCompile Include="Percolation\src\Percolation.cpp">
+      <Filter>Resource Files\Percolation</Filter>
+    </ClCompile>
+    <ClCompile Include="Percolation\src\Site.cpp">
+      <Filter>Resource Files\Percolation</Filter>
+    </ClCompile>
+    <ClCompile Include="Percolation\test\CoordinatesTests.cpp">
+      <Filter>Resource Files\Percolation\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Percolation\test\PercolationTests.cpp">
+      <Filter>Resource Files\Percolation\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Percolation\test\SiteTests.cpp">
+      <Filter>Resource Files\Percolation\test</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\src\QuickFindUF.cpp">
+      <Filter>Resource Files\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\src\QuickUnionUF.cpp">
+      <Filter>Resource Files\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\src\WeightedQuickUnionUF.cpp">
+      <Filter>Resource Files\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\src\WeightedQuickUnionUFComp.cpp">
+      <Filter>Resource Files\DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\test\QuickFindUFTests.cpp">
+      <Filter>Resource Files\DataStructure\test</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\test\QuickUnionUFTests.cpp">
+      <Filter>Resource Files\DataStructure\test</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\test\WeightedQuickUnionUFCompTests.cpp">
+      <Filter>Resource Files\DataStructure\test</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructure\test\WeightedQuickUnionUFTests.cpp">
+      <Filter>Resource Files\DataStructure\test</Filter>
+    </ClCompile>
+    <ClCompile Include="testInit.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
