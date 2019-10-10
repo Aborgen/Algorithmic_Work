@@ -92,11 +92,6 @@ namespace Part1
 		return getSite(coordinates).getStatus() == Site::Status::OPEN;
 	}
 
-	bool Percolation::isFull(const Coordinates &coordinates)
-	{
-		return !isOpen(coordinates);
-	}
-
 	int Percolation::numberOfOpenSites()
 	{
 		return openSites;
@@ -124,17 +119,6 @@ namespace Part1
 
 	void Percolation::initAnchors()
 	{
-		//Coordinates lastPosition = grid.back().back().getCoordinates();
-		//Coordinates foo;
-		//if (lastPosition.X() == n) {
-		//	foo = Coordinates(lastPosition.Y() + 1, 0)
-		//}
-		//else {
-		//	foo = lastPosition + Coordinates(0, 1);
-		//}
-
-		// Default Coordinates is set to meaningless numbers.
-		// The only thing that matters is their ids, which correspond to nodes in the union-find data structure.
 		UF.push();
 		topAnchor = Site(Coordinates(-1, -1), UF.getLastId() - 1, Site::Status::OPEN);
 
