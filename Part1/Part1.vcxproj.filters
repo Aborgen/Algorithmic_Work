@@ -53,6 +53,9 @@
     <ClInclude Include="DataStructure\WeightedQuickUnionUFComp.h">
       <Filter>Header Files\DataStructure</Filter>
     </ClInclude>
+    <ClInclude Include="Percolation\PercolationStats.h">
+      <Filter>Header Files\Percolation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Percolation\src\Coordinates.cpp">
@@ -99,6 +102,12 @@
     </ClCompile>
     <ClCompile Include="testInit.cpp">
       <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Percolation\src\PercolationStats.cpp">
+      <Filter>Resource Files\Percolation</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Header Files\Percolation</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
