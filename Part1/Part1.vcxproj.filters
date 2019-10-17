@@ -74,6 +74,9 @@
     <ClInclude Include="Sort\Selection.h">
       <Filter>Header Files\Sort</Filter>
     </ClInclude>
+    <ClInclude Include="Sort\Insertion.h">
+      <Filter>Header Files\Sort</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Percolation\src\Coordinates.cpp">
@@ -132,6 +135,12 @@
     </ClCompile>
     <ClCompile Include="Sort\test\SelectionTests.cpp">
       <Filter>Resource Files\Sort\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\test\InsertionTests.cpp">
+      <Filter>Resource Files\Sort\test</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort\src\Insertion.cpp">
+      <Filter>Resource Files\Sort\src</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
