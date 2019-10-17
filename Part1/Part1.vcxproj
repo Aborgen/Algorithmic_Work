@@ -36,6 +36,8 @@
     <ClInclude Include="Percolation\Percolation.h" />
     <ClInclude Include="Percolation\PercolationStats.h" />
     <ClInclude Include="Percolation\Site.h" />
+    <ClInclude Include="Sort\Selection.h" />
+    <ClInclude Include="Sort\Sort.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataStructure\src\QuickFindUF.cpp" />
@@ -74,6 +76,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Percolation\test\SiteTests.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Sort\src\Selection.cpp" />
+    <ClCompile Include="Sort\test\SelectionTests.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
